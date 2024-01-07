@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+.chatapp{
+    width: 800px;
+    max-width: 90%;
+    background: #fff;
+}
+.header{
+    padding: 20px;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+.header h2{
+    color: #444;
+    margin-left: 15px;
+}
+.messagearea{
+    height: 460px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+textarea{
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #FBFBFB;
+    resize: none;
+    font-family: 'Your Desired Font', sans-serif;
+    text-decoration: none;
+}
+textarea::placeholder {
+    font-family: 'Your Desired Font', sans-serif;
+}
+
+.message{
+    padding: 14px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    max-width: 300px;
+    position: relative;
+}
+.incomingmsg{
+    background: #3EB798;
+    color: #fff;
+}
+.outgoingmsg{
+    background: #3eb79962;
+    color: #444;
+    margin-left: auto;
+}
+.message h4{
+    position: absolute;
+    top: -20px;
+    color: #333;
+    font-size: 14px;
+}
+.incomingmsg h4{
+    left: 3px;
+}
+.outgoingmsg h4 {
+    right: 3px;
+}
